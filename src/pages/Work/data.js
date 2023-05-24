@@ -5,16 +5,16 @@ export const list = [
     link: 'https://chainlab.ru/',
     images: {
       0: {
-        img: '/public/assets/img/projects/chainlab/main.jpg',
+        img: '/assets/img/projects/chainlab/main.jpg',
       },
       1: {
-        img: '/public/assets/img/projects/chainlab/iphone.svg',
+        img: '/assets/img/projects/chainlab/iphone.svg',
       },
       2: {
-        img: '/public/assets/img/projects/chainlab/ipad.svg',
+        img: '/assets/img/projects/chainlab/ipad.svg',
       },
       3: {
-        img: '/public/assets/img/projects/chainlab/macbook.svg',
+        img: '/assets/img/projects/chainlab/macbook.svg',
       }
     },
     text: "News site for blockchain platform. Where interactive elements are used, such as: slider, modal windows, filtering, as well as a small animation that meets users in the second section",
@@ -26,13 +26,13 @@ export const list = [
     link: 'https://artem-netizen.github.io/drive/',
     images: {
       1: {
-        img: '/public/assets/img/projects/drive/iphone.svg',
+        img: '/assets/img/projects/drive/iphone.svg',
       },
       2: {
-        img: '/public/assets/img/projects/drive/ipad.svg',
+        img: '/assets/img/projects/drive/ipad.svg',
       },
       3: {
-        img: '/public/assets/img/projects/drive/macbook.svg',
+        img: '/assets/img/projects/drive/macbook.svg',
       }
     },
     text: "A huge site with more than 20 pages has content pages and an admin. panel. Drop-down lists, modal windows, field validation, step by step, todo list and much more are implemented.",
@@ -44,13 +44,13 @@ export const list = [
     link: 'https://artem-netizen.github.io/Exchanger/',
     images: {
       1: {
-        img: '/public/assets/img/projects/exchanger/iphone.svg',
+        img: '/assets/img/projects/exchanger/iphone.svg',
       },
       2: {
-        img: '/public/assets/img/projects/exchanger/ipad.svg',
+        img: '/assets/img/projects/exchanger/ipad.svg',
       },
       3: {
-        img: '/public/assets/img/projects/exchanger/macbook.svg',
+        img: '/assets/img/projects/exchanger/macbook.svg',
       }
     },
     text: "A website for currency exchange, transactions, transfers, and exchange rates. There are: tabs, accordions, sliders. Implemented 6 pages, + registration page and login",
@@ -62,13 +62,13 @@ export const list = [
     link: 'https://live.verstaem.online/aveji/',
     images: {
       1: {
-        img: '/public/assets/img/projects/aveji/iphone.svg',
+        img: '/assets/img/projects/aveji/iphone.svg',
       },
       2: {
-        img: '/public/assets/img/projects/aveji/ipad.svg',
+        img: '/assets/img/projects/aveji/ipad.svg',
       },
       3: {
-        img: '/public/assets/img/projects/aveji/macbook.svg',
+        img: '/assets/img/projects/aveji/macbook.svg',
       }
     },
     text: "Landing. Implemented through a grid, thanks to which the content is located exactly according to the layout. References have anchor paths. The site is designed with the version mobile first",
