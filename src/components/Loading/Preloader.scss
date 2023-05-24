@@ -1,0 +1,52 @@
+@import '../../assets/styles/vars';
+@import '../../assets/styles/mixins';
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  height: 100%;
+  overflow: hidden;
+  background: var(--white);
+  &-inner {
+    gap: 15px;
+    height: 100%;
+    justify-content: center;
+    @include flex(flex, center);
+  }
+
+  &__text {
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    @include fontSize(var(--text), var(--dark), 1);
+    > span {
+      width: 66px;
+      transition: .3s;
+      overflow: hidden;
+      display: inline-block;
+      transform: translateY(100%);
+    }
+  }
+
+  &-percent {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    overflow: hidden;
+    text-transform: uppercase;
+    @include fontSize(300px, var(--dark), .8);
+    > span {
+      overflow: hidden;
+      @include flex(flex, center);
+      span {
+        font-size: 270px;
+        font-family: var(--font-NeutralFace);
+      }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 992px) {
+      font-size: 105px;
+    }
+  }
+}

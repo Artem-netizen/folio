@@ -1,0 +1,27 @@
+@import '/src/assets/styles/mixins';
+
+//about on works
+.desc {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.title {
+  overflow: hidden;
+  grid-column-start: 3;
+  grid-column-end: 12;
+  letter-spacing: -0.04em;
+  //media
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    margin-bottom: 20px;
+    line-height: 100%;
+    grid-column: span 13;
+  }
+}
+
+.text {
+  overflow: hidden;
+  span {
+    color: #232323;
+  }
+}

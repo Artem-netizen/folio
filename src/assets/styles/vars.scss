@@ -1,0 +1,17 @@
+//colors
+:root {
+  --dark: #161616;
+  --white: #fcfcfc;
+  --burgundy: #9E4034;
+  --text: 16px;
+  --text-md: 60px;
+  --text-lg: 125px;
+  --text-lh-sm: 19px;
+  --text-lh-md: 145%;
+  --col-6: repeat(6, 1fr);
+  --col-9: repeat(9, 1fr);
+  --col-12: repeat(12, 1fr);
+  --font-Suisse: 'Suisse Intl';
+  --font-NeutralFace: 'Neutral Face';
+  --container: min(100% - 40px, 1400px);
+}

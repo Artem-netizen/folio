@@ -1,0 +1,42 @@
+@import '../../assets/styles/vars';
+@import '../../assets/styles/mixins';
+
+.social {
+  gap: 10px;
+  grid-column-end: 10;
+  grid-column-start: 8;
+  flex-direction: column;
+  @include flex(flex, stretch);
+}
+
+.link {
+  gap: 8px;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  @include flex(inline-flex, stretch);
+  @include fontSize(var(--text), var(--white), var(--text-lh-md));
+  > span {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  &:hover {
+    .icon {
+      &:first-child {
+        transform: translate3d(50px, -50px, 0);
+      }
+      &:last-child {
+        transform: translate3d(-25px, 0px, 0);
+      }
+    }
+  }
+}
+
+.icon {
+  transition: .3s;
+  display: inline-block;
+  &:last-child {
+    transform: translate3d(-50px, 50px, 0);
+  }
+}

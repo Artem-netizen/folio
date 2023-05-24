@@ -1,0 +1,58 @@
+@import '/src/assets/styles/vars';
+@import '/src/assets/styles/mixins';
+
+.intro {
+  overflow: hidden;
+  height: calc(100vh - 30px);
+}
+
+@supports (height: 100dvh) {
+  .intro {
+    height: calc(100dvh - 30px);
+  }
+}
+
+.inner {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.title {
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    font-size: 55px;
+  }
+
+  @media screen and (min-width: 425px) and (max-width: 768px) {
+    font-size: 80px;
+  }
+}
+
+.txt {
+  column-gap: 40px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  @include flex(flex, center);
+  justify-content: space-between;
+}
+
+.last {
+  display: block;
+  overflow: hidden;
+  padding-left: calc(100% - 1172px);
+  span {
+    display: inline-block;
+  }
+}
+
+.bottom {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 1s cubic-bezier(.165, .84, .44, 1);
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    font-size: 80px;
+  }
+}

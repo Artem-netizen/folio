@@ -1,0 +1,121 @@
+@import '../../../assets/styles/vars';
+@import '../../../assets/styles/mixins';
+
+.works {
+  padding-bottom: 190px;
+}
+
+.inner {
+  grid-column-end: 12;
+  grid-column-start: 3;
+  @media screen and (min-width: 320px) and (max-width: 992px) {
+    grid-column: span 13;
+  }
+}
+
+.list {
+  gap: 20px;
+  flex-direction: column;
+  @include flex(flex, stretch);
+  @media screen and (min-width: 320px) and (max-width: 992px) {
+    gap: 15px;
+  }
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    .link {
+      * {
+        color: var(--dark);
+        fill: var(--dark);
+      }
+      &::before {
+        height: 100%;
+      }
+    }
+    .first {
+      transform: translateY(-100%);
+    }
+    .last {
+      top: 0%;  
+    }
+    .icon {
+      transform: translate3d(50px, -50px, 0);
+      &:last-child {
+        transform: translate3d(0px, -30px, 0);
+      }
+    }
+  }
+}
+
+.link {
+  padding: 20px 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  * {
+    transition: .3s;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 0;
+    width: 100%;
+    transition: .3s;
+    background: var(--white);
+  }
+
+  //media
+  @media screen and (min-width: 320px) and (max-width: 992px) {
+    padding: 5px 0;
+  }
+}
+
+.title {
+  overflow: hidden;
+  position: relative;
+  grid-column-end: 5;
+  grid-column-start: 1;
+  height: fit-content;
+  span {
+    display: inline-block;
+  }
+  @media screen and (min-width: 320px) and (max-width: 992px) {
+    grid-column-end: 9;
+  }
+}
+
+.text {
+  position: relative;
+  grid-column-end: 7;
+  grid-column-start: 6;
+  @include fontSize(var(--text), var(--white), var(--text-lh-md));
+  //media
+  @media screen and (min-width: 320px) and (max-width: 992px) {
+    display: none;
+  }
+}
+
+.last {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.icons {
+  overflow: hidden;
+  position: relative;
+  grid-column-start: 10;
+}
+
+.icon {
+  display: block;
+  overflow: hidden;
+  &:last-child {
+    transform: translate3d(-50px, 50px, 0);
+  }
+}

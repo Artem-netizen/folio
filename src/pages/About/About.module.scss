@@ -1,0 +1,19 @@
+@import '../../assets/styles/vars';
+@import '../../assets/styles/mixins';
+
+.about {
+  padding-bottom: 230px;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    padding-bottom: 100px;
+  }
+}
+
+.reveal {
+  color: #232323;
+}
+
+.text {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    font-size: 32px;
+  }
+}
